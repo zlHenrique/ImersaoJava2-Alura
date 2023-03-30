@@ -7,7 +7,7 @@ Aqui estão os meus projetos e estudos realizados durante essa edição.
 
 Começo do projeto
 * Na primeira parte deste projeto, consumimos uma API de filmes com JAVA. Usamos a API pública do site IMDB com o endpoint top250movies.
-        
+
         Diretorio - /Stickers/src/App.java
         String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
         URI endereco = URI.create(url);
@@ -17,10 +17,10 @@ Começo do projeto
         String body = response.body();
 
 * Extraimos os dados da `URL` e filtramos para usar apenas a parte que nos interessa (dados e ranking dos filmes).
-        
+
         JsonParser parser = new JsonParser();
         List<Map<String, String>> listaDeFilmes = parser.parse(body);
-        
+
 * Manipulamento dos dados extraidos da URL.
 
         for (Map<String, String> filme : listaDeFilmes) {
@@ -41,9 +41,11 @@ Começo do projeto
             System.out.println();
             System.out.println();
         }
-        
-* Resultados.
 
-        ![image](https://user-images.githubusercontent.com/125168775/228710143-1ba634d2-f812-4fe7-a4b5-8a215ae66db4.png)
+## Resultados
+
+<div>
+    <img src="https://user-images.githubusercontent.com/125168775/228710143-1ba634d2-f812-4fe7-a4b5-8a215ae66db4.png" alt="Resultado da Aula 01">
+</div>
     
 ## Aula 02
