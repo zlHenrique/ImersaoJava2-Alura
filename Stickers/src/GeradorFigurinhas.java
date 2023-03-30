@@ -5,12 +5,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-
 import javax.imageio.ImageIO;
 
 public class GeradorFigurinhas {
 
-    public void cria(InputStream InputStream, String nomeArquivo) throws IOException {
+    public void cria(InputStream InputStream, String nomeArquivo, String comentario) throws IOException {
 
         // leitura da imagem
         BufferedImage imagemOriginal = ImageIO.read(InputStream);
@@ -32,7 +31,7 @@ public class GeradorFigurinhas {
         graphics.setFont(fonte);
 
         // escrever uma frase na nova imagem
-        graphics.drawString("SUPINPA", (largura/2)/2, novaAltura-100);
+        graphics.drawString(comentario, (largura/2)/2, novaAltura-100);
 
         // escrever a nova imagem em um arquivo
         ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));

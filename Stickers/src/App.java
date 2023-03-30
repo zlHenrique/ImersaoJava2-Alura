@@ -28,26 +28,34 @@ public class App {
 
             String titulo = filme.get("title");
             String urlImagem = filme.get("image");
+            double nota = Double.parseDouble(filme.get("imDbRating"));
+            double classificacao = (double) Math.round(nota / 2.0);
+
             System.out.println("Titulo: " + titulo);
+            System.out.print("Avaliação: " + filme.get("imDbRating") + " - ");
+
+            for (int i = 0; i < 5; i++) {
+                if(i < classificacao) {
+                    System.out.print("⭐️");
+                } 
+            }
+            System.out.println("\n");
+
+            String comentario = "";
+            if (nota >= 9 || nota <= 10) {
+                comentario = "Filme Excelente";
+            } else if (nota >= 6 || nota <= 8 ) {
+                comentario = "Filme Mediano";
+            } else {
+                comentario = "Da pro gasto";
+            }
 
             InputStream inputStream = new URL(urlImagem).openStream();
             String nomeArquivo = titulo + ".png";
 
             var geradora = new GeradorFigurinhas();
-            geradora.cria(inputStream, nomeArquivo);
-
-            double nota = Double.parseDouble(filme.get("imDbRating"));
-            double classificacaoEmEstrelas = (double) Math.round(nota / 2.0);
-            System.out.print("Avaliação: " + filme.get("imDbRating") + " - ");
-
-            for (int i = 0; i < 5; i++) {
-                if(i < classificacaoEmEstrelas) {
-                    System.out.print("⭐️");
-                } 
-            }
+            geradora.cria(inputStream, nomeArquivo, comentario);
             
-            System.out.println();
-            System.out.println();
         }
     }
 }
