@@ -43,6 +43,7 @@ Começo do projeto
         }
         
 * Resultados.
-        
+
+        ![image](https://user-images.githubusercontent.com/125168775/228710143-1ba634d2-f812-4fe7-a4b5-8a215ae66db4.png)
     
 ## Aula 02
