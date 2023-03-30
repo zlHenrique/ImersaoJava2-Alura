@@ -8,7 +8,6 @@ Aqui estão os meus projetos e estudos realizados durante essa edição.
 Começo do projeto
 * Na primeira parte deste projeto, consumimos uma API de filmes com JAVA. Usamos a API pública do site IMDB com o endpoint top250movies.
 
-        Diretorio - /Stickers/src/App.java
         String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
         URI endereco = URI.create(url);
         HttpClient client = HttpClient.newHttpClient();
