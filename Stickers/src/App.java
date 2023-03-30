@@ -23,11 +23,21 @@ public class App {
 
         // Exibindo e manipulando os dados.
         for (Map<String, String> filme : listaDeFilmes) {
-            System.out.println(filme.get("title"));
+            System.out.println("Nome do Filme: " + filme.get("title"));
             System.out.println(filme.get("image"));
-            System.out.println(filme.get("imDbRating"));
-            System.out.println();
 
+            double nota = Double.parseDouble(filme.get("imDbRating"));
+            double classificacaoEmEstrelas = (double) Math.round(nota / 2.0);
+            System.out.print("Avaliação: " + filme.get("imDbRating") + " - ");
+
+            for (int i = 0; i < 5; i++) {
+                if(i < classificacaoEmEstrelas) {
+                    System.out.print("⭐️");
+                } 
+            }
+            
+            System.out.println();
+            System.out.println();
         }
     }
 }
