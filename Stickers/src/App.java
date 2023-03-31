@@ -42,9 +42,9 @@ public class App {
             System.out.println("\n");
 
             String comentario = "";
-            if (nota >= 9 || nota <= 10) {
+            if (nota >= 8.1 && nota <= 10) {
                 comentario = "Filme Excelente";
-            } else if (nota >= 6 || nota <= 8 ) {
+            } else if (nota >= 6 && nota <= 8 ) {
                 comentario = "Filme Mediano";
             } else {
                 comentario = "Da pro gasto";
