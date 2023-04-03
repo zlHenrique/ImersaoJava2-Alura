@@ -52,3 +52,5 @@ Começo do projeto
 * Nesta parte do projeto, criamos a classe GeradorFigurinhas.java. Essa classe ficou responsavel por criar figurinhas para Whatsapp utilizando os pôsteres de filmes disponibilizados na API do IMBD.
 
 ## Aula 03 🤔
+
+* Ligando as pontas, refatoração e orientação a objetos.
