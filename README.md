@@ -54,3 +54,7 @@ Começo do projeto
 ## Aula 03 🤔
 
 * Ligando as pontas, refatoração e orientação a objetos.
+
+## Aula 04 🤔
+
+*  Construi uma API REST para expor nosso próprio conteúdo, utilizando ferramentas profissionais como o Spring Framework e um banco de dados NoSQL.
