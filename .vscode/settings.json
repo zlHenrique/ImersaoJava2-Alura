@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "linguagens-api/src/main/java/br/com/alura/linguagens/api"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+}
